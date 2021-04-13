@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Statistics</title>
+</head>
+
+<body>
+
+    <table class="table" border="1px">
+        <thead>
+            <th>Player</th>
+            <th>Attempts</th>
+            <th>Wins</th>
+            <th>Losses</th>
+        </thead>
+        <tbody>
+            <tr>
+                <td id="nameHere"></td>
+                <td id="attemptsHere"></td>
+                <td id="winsHere"></td>
+                <td id="lossesHere"></td>
+            </tr>
+        </tbody>
+    </table>
+
+    <div>
+        <button class="btn" id="buttonRes" type="submit" onclick="dataReset()">Reset data</button>
+    </div>
+
+    <script src="javascriptFiles/statistics.js"></script>
+    <script type="text/javascript">
+        document.body.onload = renderData();
+    </script>
+</body>
+
+</html>
