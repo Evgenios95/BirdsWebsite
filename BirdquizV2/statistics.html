@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Statistics</title>
+    <link rel="stylesheet" href="Styling.css">
+</head>
+
+<body>
+    <div id='content'>
+            <h3 id="nameHere"></h3>
+            <div style="text-align: center;">
+                <div id="sessions">
+                    <table>
+                        <tr>
+                            <th>Session</th>
+                            <th>Result</th>
+                        </tr>
+                        <div id="table-data-rows">
+
+                        </div>
+                    </table>
+                </div>
+                <div id="totals">
+                    <h4 id="attemptsHere">Number of attempts: 0</h4>
+                    <h4 id="winsHere">Number of wins: 0</h4>
+                    <h4 id="lossesHere">Number of losses: 0</h4>
+                </div>
+            </div>
+
+            <div>
+                <button class="btn" id="buttonRes" type="submit" onclick="dataReset(); location.reload();">Reset
+                    data</button>
+            </div>
+        
+    </div>
+    <script src="javascriptFiles/login.js"></script>
+    <script src="javascriptFiles/statistics.js"></script>
+    <script type="text/javascript">
+        renderData();
+    </script>
+</body>
+
+</html>

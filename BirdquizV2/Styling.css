@@ -1,0 +1,144 @@
+body {
+  background-image: url("images/BirdPattern.jpg");
+}
+
+#content {
+  border: 4px solid #563440;
+  background-color: rgba(123, 243, 231, 0.78);
+  /*top right bottom left*/
+  margin: 23px 12px 23px 12px;
+  padding: 4em 0em 4em 0em;
+  text-align: center;
+  border-radius: 17% 17% 17% 17%;
+  min-width: auto;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  /* The items are packed flush to each other toward the center of the alignment container along the main axis. */
+  justify-content: center;
+}
+
+.figure {
+  /* positioned relative to its normal position. */
+  position: relative;
+  padding: 19px 5px 0px 5px;
+  flex: 1;
+  max-width: 370px;
+  margin: 32px;
+  border-radius: 32px;
+  background: linear-gradient(
+    0deg,
+    rgba(218, 169, 218, 0.631) 0%,
+    rgba(126, 36, 53, 0.549) 55%
+  );
+  box-shadow: 6px 7px #d5b9c3b6;
+  border: 1px solid #563440;
+}
+
+.figure img {
+  width: 340px;
+  border-radius: 30% 30% 30% 30%;
+}
+
+figcaption {
+  background-color: rgba(152, 220, 200, 0.007);
+  color: rgb(24, 18, 18);
+  padding: 8px;
+  margin: 5px;
+  text-align: center;
+  border-radius: 33% 33% 33% 33%;
+}
+
+
+/*======================================================*/
+/*======================================================*/
+/*=========================Carousel=====================*/
+.carousel-inner {
+  border-radius: 33px 33px 33px 33px;
+  overflow: hidden;
+  display: block;
+  margin: auto;
+  border: 4px solid #563440;
+}
+
+#carouselExampleIndicators {
+  width: 55%;
+  margin: 0 auto;
+  max-width: 600px;
+  min-width: 400px;
+}
+
+.carousel-item img {
+  width: 500px;
+  height: 350px;
+  border-radius: inherit;
+}
+
+/*======================================================*/
+/*======================================================*/
+/*==========================table=======================*/
+
+#sessions {
+  display: inline-block;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  width: 20%;
+  border: 1px solid rgb(167, 90, 90);
+}
+
+th,
+td {
+  border: 1px solid black;
+  text-align: center;
+  padding: 12px;
+}
+
+th {
+  background-color: rgb(66, 133, 153);
+}
+
+tr:nth-child(even) {
+  background-color: #67d4e8;
+}
+
+/*======================================================*/
+/*======================================================*/
+/*=====================responsive=======================*/
+
+@media only screen and (max-width: 600px) {
+    #content {
+      background-color: rgba(180, 237, 139, 0.78);
+      border: 3px solid rgba(55, 94, 28, 0.946);
+      border-radius: 15%;
+    }
+    .figure {
+      max-width: 280px;
+      border-radius: 66px;
+      background: linear-gradient(
+        0deg,
+        rgba(93, 116, 78, 0.78) 15%,
+        rgba(97, 218, 117, 0.549) 55%
+      );
+      box-shadow: 6px 7px #3d974fb6;
+      border: 0.5px solid #0a2b0d;
+    }
+    .figure img {
+      width: 250px;
+      padding: 10px;
+    }
+    .justH1 {
+      font-size: medium;
+    }
+    th {
+      background-color: rgb(51, 141, 15);
+    }
+    tr:nth-child(even) {
+      background-color: #63ec57;
+    }
+  }
