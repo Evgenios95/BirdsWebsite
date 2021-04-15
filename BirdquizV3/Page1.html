@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="Styling.css">
+
+    <title>Page 1</title>
+</head>
+
+<body>
+    <div id="myNavBar"></div>
+
+    <div id="content">
+
+        <h1 class="justH1" id="q1">Which bird is the fastest on land?</h1>
+        <div class="flex-container">
+            <div class="row">
+
+                <figure class="figure">
+                    <a href="page2.html"><img src="images/_1firstTest/Ostrich.jpg" alt="Ostrich photo" id="birds"></a>
+                    <figcaption>Ostrich</figcaption>
+                </figure>
+
+                <figure class="figure">
+                    <a href="pageLose.html"><img src="images/_1firstTest/Emu.jpg" alt="Emu photo" id="birds"></a>
+                    <figcaption>Emu</figcaption>
+                </figure>
+
+                <figure class="figure">
+                    <a href="pageLose.html"><img src="images/_1firstTest/Falco_peregrinus.jpg" id="birds"
+                            alt="Falco photo"></a>
+                    <figcaption>Falco</figcaption>
+                </figure>
+
+                <figure class="figure">
+                    <a href="pageLose.html"><img src="images/_1firstTest/penguin.jpg" alt="Penguin photo"
+                            id="birds"></a>
+                    <figcaption>Penguin</figcaption>
+                </figure>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    <script src="renderingHTMLblocks/navFooter.js"></script>
+    <script src="javascriptFiles/statistics.js"></script>
+    <script type="text/javascript">
+        document.body.onload = incrementGames();
+        document.body.onload = displayNav();
+    </script>
+</body>
+
+</html>

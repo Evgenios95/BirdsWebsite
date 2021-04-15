@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" href="Styling.css">
+  <title>Hello, world!</title>
+
+</head>
+
+
+<body>
+  <div id="myNavBar"></div>
+
+
+
+  <div id="content">
+    <h1>Bird Quiz</h1>
+    <p id="loginMessage">hey</p>
+    <p style="font-size: 150%;">A little bird told me you're doing drugs</p>
+    <p style="font-size: 140%;">So, you are talking with birds and I'm the one doing drugs?</p>
+    <a href="Page1.html"><img src="images/Startingpage/button_begin.png" alt="button not displayed"
+        style="padding-bottom: 35px;" id="begin"></a>
+
+    <!--Carousel starts here!-->
+    <!--Carousel starts here!-->
+    <div class="carouselHere"></div>
+
+
+  </div>
+
+  <!-- footer starts here! -->
+  <!-- footer starts here! -->
+  <div class="footer"></div>
+
+
+
+  <!--For Bootstrap-->
+  <!--For Bootstrap-->
+  <script src="renderingHTMLblocks/carousel.js"></script>
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+
+  <script src="renderingHTMLblocks/navFooter.js"></script>
+  <script src="javascriptFiles/login.js"></script>
+  <script src="javascriptFiles/statistics.js"></script>
+  <script type="text/javascript">
+    document.body.onload = displayCarousel();
+    document.body.onload = displayNav();
+    document.body.onload = displayFooter();
+
+    $('.carousel').carousel({
+      interval: 3000
+    })
+    document.body.onload = addUserName();
+  </script>
+</body>
+
+</html>
